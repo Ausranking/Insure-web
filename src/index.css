@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+
+    body {
+        @apply font-[Karla]
+    }
+
+    button {
+        @apply border px-2 py-2 w-44 max-w-full
+    }
+
+    li {
+        @apply text-sm hover:font-semibold
+    }
+
+
+
+
+}
+
+@layer components {
+    #grid div {
+        @apply border gap-3 mt-4 md:mt-0
+    }
+
+
+}
