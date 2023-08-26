@@ -5,12 +5,10 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <BrowserRouter>
-      <div id="App-wrapper">
-        <Navbar/>
-      </div>
+      <Navbar />
+      <Hello/>
     </BrowserRouter>
   );
 }
 
 export default App;
-

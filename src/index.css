@@ -1,40 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-
-
-
 @layer base {
     html {
-        @apply scroll-smooth
+        @apply scroll-smooth tracking-wide;
     }
 
     body {
-        @apply font-[Karla]
+        @apply font-[Karla];
     }
 
     button {
-        @apply border px-2 py-2 w-44 max-w-full
+        @apply ring-1 ring-primary-blue rounded px-2 py-2 w-44 hover:active-btn;
     }
 
     li {
-        @apply text-sm hover:font-semibold
+        @apply text-sm hover:text-emerald-500;
     }
 
-
-
-
+    /* h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-[DM+Serif+Display]
+    } */
 }
 
 @layer components {
     #grid div {
-        @apply border gap-3 mt-4 md:mt-0
+        @apply border gap-3 mt-4 md:mt-0;
     }
 
+    .active-btn {
+        @apply bg-dark-violet text-white cursor-pointer;
+    }
 
+    .mobile-nav-open {
+        @apply overflow-hidden absolute left-0 top-5 h-screen w-screen sm:hidden text-light-gray flex flex-col items-center py-12 bg-dark-violet bg-bg-mobile-nav bg-no-repeat bg-right-bottom bg-contain mt-14 ease-in-out duration-500;
+    }
+
+    .mobile-nav-close {
+        @apply absolute top-0 left-[-100%] ease-in-out duration-500 overflow-hidden;
+    }
 }
