@@ -10,8 +10,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="  w-screen">
-        <nav className="fixed top-0 w-screen bg-white shadow-xl text-primary-violet ">
+      <header className="  w-full sticky top-0 z-10 overflow-x-clip">
+        <nav className="w-full bg-white shadow-xl text-primary-violet z-10 ">
           <div className=" md:w-[80%] px-6 sm:px-8 m-auto flex justify-between items-center w-screen min-h-[75px] lg:max-h-[60px] ">
             <div id="logo" className="font-black antialiased text-2xl ">
               <a href="/">INSURE</a>
@@ -20,10 +20,10 @@ const Navbar = () => {
             <ul className="flex  justify-between items-center space-x-4 lg:space-x-8 max-sm:hidden  ">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <Link to={item.href}>{item.label}</Link>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
-              <Button text="VIEW PLANS" />
+              <Button text="VIEW PLANS" id="nav-btn" />
             </ul>
 
             {/* ...hamburger-menu,..... */}
@@ -42,7 +42,7 @@ const Navbar = () => {
             >
               {navLinks.map((item) => (
                 <li key={item.label} className="p-4">
-                  <Link to={item.href}>{item.label}</Link>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
               <Button text="VIEW PLANS" />
