@@ -8,12 +8,12 @@ const MidSection = () => {
     <div className="pb-20 bg-light-gray ">
       <section
         id="blog"
-        className=" h-full pt-40  flex flex-col justify-between items-center "
+        className=" h-full pt-40 flex flex-col justify-between items-center   "
       >
-        <h1 className="text-primary-violet text-5xl font-bold mb-20">
+        <h1 className="text-primary-violet  left-0 text-5xl font-bold mb-20 md:text-7xl">
           We're different
         </h1>
-        <ul className="w-full relative">
+        <ul className="w-10/12 m-auto relative md:grid grid-cols-3">
           {blogLists.map((blogList) => (
             <li
               key={blogList.id}

@@ -1,15 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import Howwework from "./pages/How we work";
 import MidSection from "./components/MidSection";
 import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar /> 
+      <Navbar />
       <HeroSection />
       <MidSection />
+      <Footer />
     </BrowserRouter>
   );
 }
