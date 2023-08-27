@@ -10,7 +10,7 @@ const MidSection = () => {
         id="blog"
         className=" h-full pt-40 flex flex-col justify-between items-center   "
       >
-        <h1 className="text-primary-violet  left-0 text-5xl font-bold mb-20 md:text-7xl">
+        <h1 className="text-primary-violet max-sm:text-3xl font-bold mb-20 md:text-7xl">
           We're different
         </h1>
         <ul className="w-10/12 m-auto relative md:grid grid-cols-3">
@@ -31,10 +31,10 @@ const MidSection = () => {
 
       <aside className="bg-light-gray">
         <div className="bg-primary-violet bg-bg-hww-mob bg-no-repeat bg-right-top w-[90%] m-auto px-4 py-14  flex flex-col md:flex-row grid-cols-2  gap-8 justify-around items-center">
-          <h3 className=" text-center text-5xl p-10  font-bold md:w-1/2 md:text-left  ">
+          <h3 className=" text-center max-sm:text-3xl text-5xl p-10  font-bold md:w-1/2 md:text-left  ">
             Find out more about how we work
           </h3>
-          <Button text="HOW WE WORK" />
+          <Button id='hover-white' text="HOW WE WORK"  />
         </div>
       </aside>
     </div>

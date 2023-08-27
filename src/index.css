@@ -61,4 +61,7 @@
     #nav-btn {
         @apply ring-primary-violet
     }
+    #hover-white {
+        @apply hover:bg-light-gray  hover:text-primary-violet cursor-pointer hover:font-bold
+    }
 }

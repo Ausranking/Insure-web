@@ -15,16 +15,16 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex p-4 space-x-3 text-gray-500">
-          <a href="">
+          <a href="" className="hover:text-primary-violet">
             <FaFacebook size={25} />
           </a>
-          <a href="http://twitter.com/_kingaustinn">
+          <a href="http://twitter.com/_kingaustinn" className="hover:text-primary-violet">
             <FaTwitter size={25} />
           </a>
-          <a href="">
+          <a href="" className="hover:text-primary-violet">
             <FaPinterest size={25} />
           </a>
-          <a href="">
+          <a href="" className="hover:text-primary-violet">
             <FaInstagram size={25} />
           </a>
         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
 
             <ul className="text-dark-violet font-bold tracking-tighter text-xl mt-4">
               {item.links.map((link, index) => (
-                <li className="p-2" key={index}>
+                <li className="p-2 hover:underline hover:cursor-pointer" key={index}>
                   {link}
                 </li>
               ))}
