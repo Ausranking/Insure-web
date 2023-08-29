@@ -64,4 +64,7 @@
     #hover-white {
         @apply hover:bg-light-gray  hover:text-primary-violet cursor-pointer hover:font-bold
     }
+    .foot-style {
+        @apply bg-bg-footer-mob md:bg-bg-footer-desk bg-no-repeat bg-light-gray shadow-2xl w-full h-max pb-10
+    }
 }

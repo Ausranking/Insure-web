@@ -10,8 +10,8 @@ const MidSection = () => {
         id="blog"
         className=" h-full pt-40 flex flex-col justify-between items-center   "
       >
-        <h1 className="text-primary-violet max-sm:text-3xl font-bold mb-20 md:text-7xl">
-          We're different
+        <h1 className="text-primary-violet max-sm:text-4xl font-bold mb-20 md:text-7xl">
+          We're different indaboski
         </h1>
         <ul className="w-10/12 m-auto relative md:grid grid-cols-3">
           {blogLists.map((blogList) => (
